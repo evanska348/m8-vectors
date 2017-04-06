@@ -11,12 +11,23 @@ choice <- sample(marbles, 1)
 # - Randomly samples a marble
 # - Returns whether or not the person guessed accurately (preferrably a full phrase)
 
-
+MarbleGame <- function(guess) {
+  result <- choice
+  if (guess == result) {
+    return("You're right")
+  } else {
+    return ("You're wrong"
+    )
+  }
+}
 # Play the marble game!
 
-
+MarbleGame("red")
 # Bonus: Play the marble game until you win, keeping track of how many tries you take
 
 
 ## Double bonus(answer not provided): play the game 1000X (until you win) and track the average number of tries
 # Is it what you expected based on the probability
+
+
+
